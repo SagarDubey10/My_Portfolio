@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Sagar</h1>
+            <p> Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"></a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="content">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    👋 Hello! I'm <strong>Sagar Dubey</strong>, a passionate Full Stack Developer dedicated to crafting
+                    sleek,
+                    functional, and intuitive web applications. I thrive on blending creativity with technology to
+                    tackle
+                    real-world challenges.
+                </p>
+                <p>
+                    With proficiency in <strong>C, C++, Core Java, Python, HTML, CSS,</strong> and
+                    <strong>JavaScript</strong>,
+                    I aim to deliver high-quality projects that not only meet client expectations but also provide an
+                    exceptional user experience.
+                </p>
+                <p>
+                    Currently, I'm enhancing my skills in <strong>Python development</strong> and frontend technologies
+                    while
+                    actively contributing as a Management Sub-Coordinator in <strong>FORCES</strong>, where I lead
+                    events
+                    and foster collaboration within my community.
+                </p>
+            </section>
+
+
+            <h3>Skills</h3>
+            <div class="skills-container">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">SQLite</span>
+            </div>
+        </div>
+        <img src="profile.jpeg" alt="Profile Image" class="profile-img">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Project 1: ByteBuddy</h3>
+                <p>Created a Flask chatbot app with NLP capabilities, enabling users to query and teach the bot.
+                    Features login authentication, session management, and responsive design for seamless interaction.
+                </p>
+                <a href="https://github.com/SagarDubey10/ByteBuddy" class="project-link">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: URL Shortner Hospital Management System</h3>
+                <p>Created a Flask-based URL shortener that enables users to generate short URLs for long links or
+                    direct file access. Features include file uploads, session management, and robust error handling,
+                    all within a user-friendly interface.
+                </p>
+                <a href="https://github.com/SagarDubey10/url-shortner" class="project-link">View
+                    Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Hospital Management System</h3>
+                <p>Developed a web-based Hospital Management System (HMS) featuring separate login portals for doctors
+                    and patients. Patients can manage their medical records and appointments, while doctors can access
+                    patient details and appointment management.</p>
+                <a href="https://github.com/SagarDubey10/Hospital-Management-System" class="project-link">View
+                    Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 4: Task Management App</h3>
+                <p>Built a task management app to help users organize their tasks efficiently.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <!-- More projects can be added here -->
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p>If you'd like to collaborate or get in touch, feel free to reach out via email or fill out the form below:
+        </p>
+        <p class="email"><a href="mailto:sagargenai@gmail.com">sagargenai@gmail.com</a></p>
+        <form class="contact-form" action="https://formspree.io/f/xjkvvpgn" method="POST" aria-label="Contact Form">
+            <input type="text" name="name" placeholder="Your Name" required aria-required="true">
+            <input type="email" name="email" placeholder="Your Email" required aria-required="true">
+            <textarea name="message" rows="4" placeholder="Your Message" required aria-required="true"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p class="note">I typically respond within 48 hours. Looking forward to connecting!</p>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Sagar's Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
