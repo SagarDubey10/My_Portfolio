@@ -180,37 +180,65 @@ body {
 /* About Section */
 #about {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    /* Space between image and content */
+    align-items: flex-start;
+    /* Align items at the start */
     background-color: #fff;
     padding: 60px 20px;
 }
 
-.about-section {
-    padding: 60px 20px;
-}
-
-.content {
-    max-width: 600px;
+/* Profile Image Container */
+.profile-container {
+    margin-left: 40px;
+    /* Space to the left of the image */
 }
 
 /* Profile Image */
 .profile-img {
     border-radius: 50%;
-    width: 200px;
-    /* Default width for small screens */
-    height: 200px;
-    /* Default height for small screens */
+    width: 300px;
+    /* Width for larger screens */
+    height: 300px;
+    /* Height for larger screens */
     border: 5px solid #007bff;
 }
 
-/* Media query for larger screens */
-@media (min-width: 768px) {
+/* Content Container */
+.content {
+    max-width: 600px;
+    /* Limit the maximum width of the content */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items */
+        text-align: center;
+        /* Center align text */
+    }
+
+    .profile-container {
+        margin: 20px 0;
+        /* Space around image on small screens */
+    }
+
     .profile-img {
-        width: 300px;
-        /* Adjust width for larger screens */
-        height: 300px;
-        /* Adjust height for larger screens */
+        width: 80%;
+        /* Responsive width for smaller screens */
+        max-width: 200px;
+        /* Limit maximum width */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: center;
+        /* Center align content */
     }
 }
 
