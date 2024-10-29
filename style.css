@@ -154,6 +154,7 @@ body {
         width: 100%;
         text-align: center;
         z-index: 999;
+        background: linear-gradient(90deg, #000000, #3c3841);
     }
 
     .navbar .nav-links.active {
