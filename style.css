@@ -191,23 +191,23 @@ body {
 
 /* Profile Image Container */
 .profile-container {
-    margin-left: 40px;
+    margin-left: 70px;
     /* Space to the left of the image */
 }
 
 /* Profile Image */
 .profile-img {
     border-radius: 50%;
-    width: 300px;
+    width: 350px;
     /* Width for larger screens */
-    height: 300px;
+    height: 350px;
     /* Height for larger screens */
     border: 5px solid #007bff;
 }
 
 /* Content Container */
 .content {
-    max-width: 600px;
+    max-width: 750px;
     /* Limit the maximum width of the content */
 }
 
