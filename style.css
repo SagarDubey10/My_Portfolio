@@ -229,7 +229,7 @@ body {
     .profile-img {
         width: 80%;
         /* Responsive width for smaller screens */
-        max-width: 200px;
+        max-width: 350px;
         /* Limit maximum width */
     }
 
