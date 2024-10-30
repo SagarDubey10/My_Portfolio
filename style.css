@@ -243,6 +243,57 @@ body {
     }
 }
 
+/* About Section Buttons */
+.about-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.download-resume {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.download-resume:hover {
+    background-color: #0056b3;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0056b3;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .about-buttons {
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+
 /* Projects Section */
 .projects-section {
     background-color: #fff;
