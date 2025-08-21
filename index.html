@@ -167,8 +167,12 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Sagar's Portfolio | All Rights Reserved</p>
+        <p>© <span id="year"></span> Sagar's Portfolio | All Rights Reserved</p>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </footer>
+
 
     <!-- JavaScript -->
     <script src="script.js"></script>
