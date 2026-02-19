@@ -4,31 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar's Portfolio</title>
+    <title>Sagar Dubey | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header / Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm Sagar</h1>
-            <p>Software Engineer | Python/Backend Developer | Tech Enthusiast</p>
-            <a href="#projects" class="btn">Explore My Work</a>
-        </div>
-    </header>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="container">
+        <div class="container nav-container">
             <div class="logo">
-                <a href="#"></a>
+                <a href="#">Sagar Dubey</a>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -37,144 +32,109 @@
             </div>
         </div>
     </nav>
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="profile-container"> <!-- Separate div for the profile image -->
-            <img src="profile.jpeg" alt="Profile Image" class="profile-img">
-        </div>
-        <div class="content">
-            <section>
-                <h2>About Me</h2>
-                <p>
-                    👋 Hello! I'm <strong>Sagar Dubey</strong>, a passionate Full Stack Developer dedicated to
-                    crafting sleek,
-                    functional, and intuitive web applications. I thrive on blending creativity with technology to
-                    tackle real-world challenges.
-                </p>
-                <p>
-                    As a <strong>Software Engineer</strong> with strong proficiency in <strong>Python, Core Java, C,
-                        C++, HTML, CSS,</strong> and <strong>JavaScript</strong>, I focus on building efficient,
-                    scalable applications that offer both functionality and an exceptional user experience.
-                </p>
-                <p>
-                    I’m currently enhancing my expertise as a <strong>Python Developer</strong> and <strong>Backend
-                        Developer</strong>, specializing in <strong>Flask, SQL, SQLite</strong>, and <strong>Data
-                        Structures & Algorithms</strong>. Additionally, I’m deepening my interest in
-                    <strong>Cybersecurity</strong> to ensure secure development practices. Outside of coding, I
-                    contributed as a <strong>Management Sub-Coordinator</strong> in <strong>FORCES</strong>, where I
-                    lead
-                    events and encourage collaboration within my tech community.
-                </p>
 
-            </section>
-
-            <h3>Skills</h3>
-            <div class="skills-container">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Python</span>
-                <span class="skill">Java</span>
-                <span class="skill">SQLite</span>
+    <section id="about" class="hero-section">
+        <div class="hero-left">
+            <span class="role-tag">BACKEND / PYTHON DEVELOPER</span>
+            <h1>Hello, my name<br>is Sagar Dubey</h1>
+            <p>
+                Backend-focused Python Developer with expertise in building secure, scalable web applications using
+                Flask and Django. Proficient in designing optimized schemas for relational databases and dedicated to
+                delivering production-grade backend systems.
+            </p>
+            <div class="hero-buttons">
+                <a href="#journey" class="btn btn-primary">Projects</a>
+                <a href="https://linkedin.com/in/Sagar-Dubey" target="_blank" class="btn btn-outline">LinkedIn</a>
             </div>
+        </div>
 
-            <!-- Moved About Section Buttons here -->
-            <div class="about-buttons">
-                <a href="Sagar_Dubey_Resume-New.pdf" class="btn download-resume" target="_blank">Download Resume</a>
-                <h3>Let's Connect and Collaborate!</h3>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/sagardubeyjava/" target="_blank" class="social-link">
-                        <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <a href="https://github.com/SagarDubey10" target="_blank" class="social-link">
-                        <img src="github-icon.png" alt="GitHub" class="social-icon">
-                    </a>
-                    <a href="https://twitter.com/SagarDubey" target="_blank" class="social-link">
-                        <img src="twitter-icon.png" alt="Twitter" class="social-icon">
-                    </a>
+        <div class="hero-right">
+            <div class="blob-background"></div>
+            <img src="profile.jpeg" alt="Sagar Dubey">
+        </div>
+    </section>
+
+    <section id="journey" class="tree-section">
+        <h2>My Journey & Projects</h2>
+
+        <div class="tree-container">
+            <div class="trunk-line" id="trunk-line"></div>
+
+            <div class="tree-node left">
+                <div class="node-content activity-node">
+                    <h3>💼 Backend Development Intern</h3>
+                    <p><strong>KP Sales Corporation</strong><br>Developed a Flask-based Inventory System managing 200+
+                        SKUs, reducing manual stock entry errors by 40% via automated validation logic.</p>
+                    <span class="date">May 2025 - Oct 2025</span>
                 </div>
+            </div>
 
+            <div class="tree-node right">
+                <div class="node-content activity-node">
+                    <h3>🌱 Certifications & Training</h3>
+                    <p>Completed 100 Days of Code: Python Pro Bootcamp (Udemy) and achieved AWS Academy Graduate for
+                        Cloud Architecting.</p>
+                    <span class="date">Jul 2025 - Aug 2025</span>
+                </div>
+            </div>
+
+            <div class="tree-node left">
+                <div class="node-content project-node">
+                    <h3>🌿 Project: Smart Classroom Scheduler</h3>
+                    <p>Engineered a Dockerized scheduling engine using a multi-pass heuristic algorithm, reducing
+                        timetable generation time by 90% for 50+ faculty members.</p>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-outline btn-sm" target="_blank">GitHub Repo</a>
+                    </div>
+                    <span class="date">Jan 2025 - Present</span>
+                </div>
+            </div>
+
+            <div class="tree-node right">
+                <div class="node-content project-node">
+                    <h3>🌿 Project: Text-to-Speech Extension</h3>
+                    <p>Developed an accessibility Chrome extension to convert page content to speech with sub-100ms
+                        latency. Published in IJRTI.</p>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-outline btn-sm" target="_blank">GitHub Repo</a>
+                    </div>
+                    <span class="date">Jan 2025</span>
+                </div>
+            </div>
+
+            <div class="tree-node left">
+                <div class="node-content project-node">
+                    <h3>🌿 Project: ByteBuddy Chatbot</h3>
+                    <p>Developed a self-learning chatbot using NLP similarity matching to dynamically adapt responses.
+                        Managed 1,000+ stored conversations with optimized SQLite indexing.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/SagarDubey10" class="btn btn-outline btn-sm" target="_blank">GitHub
+                            Repo</a>
+                        <a href="https://sagardubey10.github.io/Landing-Page/" class="btn btn-primary btn-sm"
+                            target="_blank">Live App</a>
+                    </div>
+                    <span class="date">May 2024 - Jul 2024</span>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Project 1: ByteBuddy</h3>
-                <p>Created a Flask chatbot app with NLP capabilities, enabling users to query and teach the bot.
-                    Features login authentication, session management, and responsive design for seamless
-                    interaction.
-                </p>
-                <a href="https://sagardubey10.github.io/Landing-Page/" class="project-link" target="_blank">View
-                    Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2: URL Shortner </h3>
-                <p>Created a Flask-based URL shortener that enables users to generate short URLs for long links or
-                    direct file access. Features include file uploads, session management, and robust error
-                    handling,
-                    all within a user-friendly interface.
-                </p>
-                <a href="https://github.com/SagarDubey10/url-shortner" class="project-link" target="_blank">View
-                    Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 3: Hospital Management System</h3>
-                <p>Developed a web-based Hospital Management System (HMS) featuring separate login portals for
-                    doctors
-                    and patients. Patients can manage their medical records and appointments, while doctors can
-                    access
-                    patient details and appointment management.</p>
-                <a href="https://github.com/SagarDubey10/Hospital-Management-System" class="project-link"
-                    target="_blank">
-                    View Project
-                </a>
-
-            </div>
-            <div class="project">
-                <h3>Project 4: In Progress</h3>
-                <p>Currently working on this project. The repository is not available yet but will be created soon. Stay
-                    tuned! 😊</p>
-                <a href="#" class="project-link disabled" onclick="return false;">Repository Coming Soon</a>
-            </div>
-
-            <!-- More projects can be added here -->
-        </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <h2>Contact</h2>
-        <p>If you'd like to collaborate or get in touch, feel free to reach out via email or fill out the form
-            below:
-        </p>
-        <p class="email"><a href="mailto:sagargenai@gmail.com">sagargenai@gmail.com</a></p>
-        <form class="contact-form" action="https://formspree.io/f/xjkvvpgn" method="POST" aria-label="Contact Form">
-            <input type="text" name="name" placeholder="Your Name" required aria-required="true">
-            <input type="email" name="email" placeholder="Your Email" required aria-required="true">
-            <textarea name="message" rows="4" placeholder="Your Message" required aria-required="true"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate or get in touch, feel free to reach out!</p>
+        <p class="email"><a href="mailto:sagardubey1622@gmail.com">sagardubey1622@gmail.com</a></p>
+        <form class="contact-form" action="https://formspree.io/f/xjkvvpgn" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-        <p class="note">I typically respond within 48 hours. Looking forward to connecting!</p>
     </section>
 
-
-
-    <!-- Footer -->
     <footer>
-        <p>© <span id="year"></span> Sagar's Portfolio | All Rights Reserved</p>
-        <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
+        <p>© <span id="year"></span> Sagar Dubey | All Rights Reserved</p>
     </footer>
 
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 
