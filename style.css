@@ -3,16 +3,12 @@
    ========================================= */
 :root {
     --bg-color: #f9f9fa;
-    /* Very light gray background */
     --text-main: #25282b;
-    /* Dark gray for headings */
-    --text-muted: #828282;
-    /* Medium gray for paragraphs */
+    --text-muted: #6b7280;
     --accent-color: #FDC435;
-    /* Yellow accent from image */
     --accent-hover: #e5b02b;
     --card-bg: #ffffff;
-    --border-color: #eaeaea;
+    --border-color: #e5e7eb;
 }
 
 * {
@@ -50,8 +46,8 @@ body {
 }
 
 .logo a {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 800;
     color: var(--text-main);
     text-decoration: none;
 }
@@ -88,7 +84,7 @@ body {
 }
 
 /* =========================================
-   HERO / ABOUT SECTION (Yellow Blob Design)
+   HERO / ABOUT SECTION (Offset Frame Fix)
    ========================================= */
 .hero-section {
     min-height: 100vh;
@@ -96,19 +92,18 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 5% 50px;
+    padding: 120px 5% 50px;
 }
 
 .hero-left {
     flex: 1;
-    max-width: 500px;
-    padding-right: 40px;
+    max-width: 550px;
     z-index: 2;
 }
 
 .role-tag {
     color: var(--accent-hover);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 0.85rem;
     letter-spacing: 1.5px;
     margin-bottom: 15px;
@@ -117,7 +112,6 @@ body {
 
 .hero-left h1 {
     font-family: 'Playfair Display', serif;
-    /* Elegant Serif font */
     font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 25px;
@@ -137,7 +131,7 @@ body {
 
 /* Standard Button Styles */
 .btn {
-    padding: 10px 25px;
+    padding: 12px 25px;
     border-radius: 6px;
     font-weight: 600;
     font-size: 1rem;
@@ -174,37 +168,39 @@ body {
     font-size: 0.9rem;
 }
 
-/* Right Side - Image and Blob */
+/* The New Image Styling */
 .hero-right {
     flex: 1;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
+    padding: 20px;
 }
 
-.blob-background {
+.image-wrapper {
+    position: relative;
+    max-width: 380px;
+    width: 100%;
+}
+
+.image-frame {
     position: absolute;
-    right: -10%;
-    top: -5%;
-    width: 120%;
-    height: 110%;
-    background-color: var(--accent-color);
-    /* Mimics the yellow blob shape */
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    width: 100%;
+    height: 100%;
+    border: 6px solid var(--accent-color);
+    border-radius: 20px;
+    top: 25px;
+    right: -25px;
     z-index: 1;
 }
 
-.hero-right img {
+.image-wrapper img {
     position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
     z-index: 2;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
-    /* Makes image circular */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* =========================================
@@ -213,7 +209,6 @@ body {
 .tree-section {
     padding: 80px 5%;
     background-color: #fff;
-    /* Crisp white background for timeline */
     text-align: center;
 }
 
@@ -230,7 +225,6 @@ body {
     text-align: left;
 }
 
-/* Background Trunk Line */
 .tree-container::after {
     content: '';
     position: absolute;
@@ -243,7 +237,6 @@ body {
     z-index: 1;
 }
 
-/* Animated Growing Line */
 .trunk-line {
     position: absolute;
     width: 4px;
@@ -253,19 +246,18 @@ body {
     transform: translateX(-50%);
     height: 0%;
     z-index: 2;
+    transition: height 0.2s ease-out;
 }
 
 .tree-node {
     padding: 20px 40px;
     position: relative;
     width: 50%;
-    /* These ensure the fade-in animation works */
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
 }
 
-/* Class added by JS to trigger animation */
 .tree-node.visible {
     opacity: 1;
     transform: translateY(0);
@@ -281,7 +273,6 @@ body {
     text-align: left;
 }
 
-/* The dot on the timeline */
 .tree-node::after {
     content: '';
     position: absolute;
@@ -307,7 +298,7 @@ body {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
     display: inline-block;
     width: 100%;
     text-align: left;
@@ -315,14 +306,14 @@ body {
 
 .node-content h3 {
     color: var(--text-main);
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-size: 1.15rem;
 }
 
 .node-content p {
     color: var(--text-muted);
     font-size: 0.95rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .project-actions {
@@ -395,22 +386,25 @@ body {
 footer {
     text-align: center;
     padding: 30px 0;
-    background-color: var(--text-main);
+    background-color: #1a1a1a;
     color: #fff;
 }
 
 /* =========================================
-   MOBILE RESPONSIVENESS
+   BULLETPROOF MOBILE RESPONSIVENESS
    ========================================= */
 @media (max-width: 900px) {
+
+    /* Fix Hero Alignment */
     .hero-section {
         flex-direction: column-reverse;
-        padding-top: 120px;
+        padding-top: 100px;
         text-align: center;
     }
 
     .hero-left {
         padding-right: 0;
+        margin-top: 50px;
     }
 
     .hero-buttons {
@@ -421,13 +415,18 @@ footer {
         font-size: 3rem;
     }
 
-    .blob-background {
-        right: 0;
-        left: 0;
-        border-radius: 50%;
+    /* Fix Image Frame on Mobile */
+    .image-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
     }
 
-    /* Tree Mobile Adjustments */
+    .image-frame {
+        top: 15px;
+        right: -15px;
+    }
+
+    /* Fix Tree Timeline on Mobile */
     .tree-container::after,
     .trunk-line {
         left: 20px;
@@ -435,20 +434,24 @@ footer {
 
     .tree-node {
         width: 100%;
-        padding-left: 60px;
-        padding-right: 10px;
-        text-align: left;
+        padding-left: 55px;
+        /* Perfect spacing for mobile */
+        padding-right: 0;
     }
 
+    .tree-node.left,
     .tree-node.right {
+        text-align: left;
         left: 0;
     }
 
+    /* Center the dot exactly on the line */
     .tree-node.left::after,
     .tree-node.right::after {
         left: 10px;
     }
 
+    /* Ensure left-side buttons align correctly on mobile */
     .tree-node.left .project-actions {
         justify-content: flex-start;
     }
