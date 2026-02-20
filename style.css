@@ -126,7 +126,11 @@ body {
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    align-items: center;
+    /* This ensures the text link aligns vertically with the buttons */
+    flex-wrap: wrap;
+    /* Prevents them from squishing on mobile screens */
 }
 
 /* Standard Button Styles */
@@ -145,6 +149,11 @@ body {
     background-color: var(--accent-color);
     color: #000;
     border: 2px solid var(--accent-color);
+}
+
+.btn-text:hover {
+    color: var(--accent-hover);
+    border-color: var(--accent-hover);
 }
 
 .btn-primary:hover {
@@ -166,6 +175,17 @@ body {
 .btn-sm {
     padding: 6px 15px;
     font-size: 0.9rem;
+}
+
+.btn-text {
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent-color);
+    /* Elegant yellow underline */
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
 }
 
 /* The New Image Styling */
